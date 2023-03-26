@@ -1,22 +1,21 @@
-import java.util.Scanner;
+import java.util.*;
+
 class Main {
   public static void main(String[] args) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter your age: ");
-    int age=sc.nextInt();
-    System.out.println("Enter Deposit Amount: ");
-    int amount=sc.nextInt();
-    if(age>=21&&amount>=100){
-      System.out.println("Account type A ");
+    Scanner st = new Scanner(System.in);
+    System.out.println("Enter first number");
+    int num1 = st.nextInt();
+    System.out.println("Enter second number");
+    int num2 = st.nextInt();
+    System.out.println("Enter third number");
+    int num3 = st.nextInt();
+    int max = num1;
+    if (num2 > max) {
+      max = num2;
     }
-    else if(age>=21&&amount<100)
-      {
-      System.out.println("Account Type C ");
-      }
-    else if(age<21&&amount>=100){
-      System.out.println("Account type B ");
-    }else{
-    System.out.println("cannot open Account");
+    if (num3 > max) {
+      max = num3;
     }
+    System.out.println("The greatest number is " + max);
   }
 }
