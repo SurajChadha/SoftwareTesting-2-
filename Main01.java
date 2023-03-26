@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Code2 {
+class Main02 {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
     System.out.println("Enter 1st side");
